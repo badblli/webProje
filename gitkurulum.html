@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Git Kurulumu</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" icerik="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="icon" href="img/logo.PNG" type="image/x-icon">
+
+</head>
+
+<body>
+
+    <div class="header">
+        <img src="img/logo.PNG">
+        <p>"Git ve GitHub Hakkında Her şey"</p>
+    </div>
+
+    <div class="menu">
+        <a href="index.html" title="Anasayfa">ANASAYFA</a>
+        <a href="duyurular.html" title="Duyurular">DUYURULAR</a>
+        <a href="siteharitasi.html" title="Site Haritası">SİTE HARİTASI</a>
+        <a href="hakkimizda.html" title="Hakkımızda">HAKKIMIZDA</a>
+        <a href="iletisim.html" title="İletişim">İLETİŞİM</a>
+    </div>
+
+    <div class="row">
+        <div class="sol">
+            <a href="githubnedir.html" title="Github Nedir?">Github Nedir?</a>
+            <a href="terimler.html" title="Terimler">Terimler</a>
+            <a href="gitnedir.html" title="Github Nedir?">Git Nedir?</a>
+            <a href="gitkurulum.html" title="Kurulum">Kurulum</a>
+            <a href="projeolusturma.html" title="Proje Oluşturma">Proje Oluşturma</a>
+            <a href="temelkomutlar.html" title="Temel Komutlar">Temel Komutlar</a>
+            <a href="dallanmakomutlari.html" title="Dallanma Komutları">Dallanma Komutları</a>
+            <a href="uzakdepokomutlari.html" title="Uzak Depo Komutları">Uzak Depo Komutları</a>
+            <a href="digerkomutlar.html" title="Diğer Komutlar">Diğer Komutlar</a>
+            <a href="faydalilinkler.html" title="Faydalı Linkler/Kaynakça">Faydalı Linkler/Kaynakça</a>
+        </div>
+        <div class="orta">
+            <svg viewBox="50 100 2060 500">
+        <symbol id="s-text">
+            <text text-anchor="middle" x="50%" y="80%"> GIT KURULUMU </text>
+        </symbol>
+
+        <g class = "g-ants">
+            <use xlink:href="#s-text" class="text-copy"></use>
+            <use xlink:href="#s-text" class="text-copy"></use>
+            <use xlink:href="#s-text" class="text-copy"></use>
+            <use xlink:href="#s-text" class="text-copy"></use>
+            <use xlink:href="#s-text" class="text-copy"></use>
+        </g>
+    </svg>
+            <p>Git ile çalışmak için git'in kendi komut satırı arayüzünü (Git Command Line Interface) veya görsel kullanıcı arayüzü olan masaüstü uygulamalar (SourceTree, Tortoise Git, Tower veya GitHub) kullanabilirsiniz.</p><br>
+
+            <p>Git ile çalışırken görsel arayüzü olan bir uygulama kullanmanız üretkenliğinizi arttırıp Git'in çok sayıdaki karmaşık komutuna daha hızlı ve kolay erişmenizi sağlar. Diğer yandan Git'in komut satırı arayüzünü kullanmanız Git ile ilgli daha
+                ayrıntılı bilgilenmenizi ve 3. parti uygulamalara bağımlı kalmadan Git ile çalışabilmenizi sağlar.</p>
+            <br>
+            <p> Git sürüm kontrol sistemini kullanabilmek için şuradan ( <a href="http://git-scm.com/downloads">git-scm.com/downloads</a> ) windows veya mac işletim sistemine ait kurulum dosyalarını indirip klasik kurulum işlemini yapabilirsiniz.</p><br>
+            <p> Linux, Unix ve türevi için kurulumu terminal ile yapılabilir.</p>
+            <pre><code>$ get install git</code></pre><br>
+            <p> Kurulum tamamlandıktan sonra Windows ( CMD&nbsp;veya Git Bash ), Linux, Unix, Mac ve türevleri için terminal ekranına aşağıdaki komut yazılarak kurulumun başarılı olup olmadığı ve git sürüm bilgisi kontrolü yapılır.</p><br>
+            <pre><code>$ git --version</code></pre><br>
+            <div align="center">
+                <img src="img/gitVersion.png" border="1" ; height="200">
+                <p><i>Git Versiyon Kontrolü Komutu Kullanımı</i></p>
+            </div>
+            <br>
+            <h2>Git ayarları</h2>
+            <p> Git kurulumu yapıldıktan sonra güncellemelerin kimin tarafından yapıldığı bilgisi için kullanıcı adı ve e-posta adresini kayıt etmek faydalı olacaktır.</p><br>
+            <p> Gerekli kullanıcı adı ve e-posta adresi kayıt edildikten sonra artık güncellemenin sizin tarafınızdan yapıldığı dosya bilgisine bakılarak kolayca bulunur.</p><br>
+            <p> Git ayarları <strong>config</strong> komutu ile yapılır.</p>
+            <pre><code>$ git config</code></pre><br>
+            <div align="center">
+                <img src="img/gitConfig.png" border="1" ; height="600">
+                <p><i>Git Ayarlar Komutu Kullanımı</i></p>
+            </div>
+            <br>
+            <p> Kullanıcı adını değiştirmek için aşağıdaki komut kullanılır.</p>
+            <pre><code>$ git config --global user.name "busenuradıbelli"</code></pre><br>
+            <p> Kullanıcı e-posta adresini değiştirmek aşağıdaki komut kullanılır.</p>
+            <pre><code>$ git config --global user.email "busenuradibelli@gmail.com"</code></pre>
+            <div align="center">
+                <img src="img/gitYapilandirmasi.png" border="1" ; height="200">
+                <p><i>Git Yapılandırması</i></p>
+            </div>
+            <br>
+            <p> Ayarları yaparken global parametresi eklenmezse sadece üzerinde çalışılan proje için ayar uygulanacak herhangi bir proje açık değilse hata verecektir.</p><br>
+            <p> Tüm ayarları listelemek için aşağıdaki komut kullanılır.</p>
+            <pre><code>$ git config --list</code></pre><br>
+            <div align="center">
+                <img src="img/gitListe.png" border="1" ; height="300">
+                <p><i>Git Ayarlar Listeleme</i></p>
+            </div>
+            <br>
+        </div>
+
+
+    </div>
+    </div>
+
+    <div class="footer">
+        <h2>Busenur ADIBELLİ © Tüm Hakları Saklıdır.</h2>​
+    </div>
+
+</body>
+
+</html>
