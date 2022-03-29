@@ -1,0 +1,4 @@
+# webProje
+BU WEB SAYFASI ONDOKUZ MAYIS ÜNİVERSİTESİ SAMSUN MESLEK YÜKSEKOKULU WEB EDİTÖRÜ DERSİ FİNAL PROJESİ İÇİN OLUŞTURULMUŞTUR.
+## Deploy on Vercel
+https://web-proje.vercel.app/
